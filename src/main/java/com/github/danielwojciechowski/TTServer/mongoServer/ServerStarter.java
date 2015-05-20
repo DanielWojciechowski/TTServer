@@ -15,6 +15,8 @@ public class ServerStarter {
     public static void main(String[] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(MongoConfig.class);
         MongoOperations mongoOperation = (MongoOperations) ctx.getBean("mongoTemplate");
+
+        //db init
 /*        Travel travel = new Travel();
         travel.setDate(new Date());
         travel.setTrace(new LinkedList<GeoPoint>());
