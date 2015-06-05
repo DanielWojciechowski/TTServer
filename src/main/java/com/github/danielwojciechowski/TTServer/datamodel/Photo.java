@@ -5,22 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.List;
-
 @Document
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Travel {
-
-    private String id;
-    private String userUID;
-
-    private String title;
+public class Photo {
+    private String path;
+    private GeoPoint location;
     private String note;
-
-    private List<GeoPoint> trace;
-    private List<Photo> photos;
-
 
 }

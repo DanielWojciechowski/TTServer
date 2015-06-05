@@ -18,11 +18,10 @@ public class ServerStarter {
 
         //db init
 /*        Travel travel = new Travel();
-        travel.setDate(new Date());
         travel.setTrace(new LinkedList<GeoPoint>());
-        travel.getTrace().add(new GeoPoint(52.251605, 20.998186));
-        travel.getTrace().add(new GeoPoint(52.251202, 20.998266));
-        travel.getTrace().add(new GeoPoint(52.250961, 20.998322));
+        travel.getTrace().add(new GeoPoint(52.251605, 20.998186, new Date()));
+        travel.getTrace().add(new GeoPoint(52.251202, 20.998266, new Date()));
+        travel.getTrace().add(new GeoPoint(52.250961, 20.998322, new Date()));
         mongoOperation.save(travel);*/
 
         SpringApplication.run(ServerStarter.class, args);
